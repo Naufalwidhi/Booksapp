@@ -7,3 +7,4 @@ $router->get('/key', function () {
     return str_random(32);
 });
 $router->get('/foo', 'BooksController@index');
+$router->get('/books/{id}', 'BooksController@getdataid');
